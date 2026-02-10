@@ -60,7 +60,7 @@ def render_genera_header(logo_path, test_title, theory_text, objectives_text, in
     st.markdown(f"<h1 style='text-align: center; color: #1f3a52; margin-bottom: 25px;'>{test_title}</h1>", unsafe_allow_html=True)
 
     with st.container():
-        st.markdown("### 📘 Introduzione e Riferimenti")
+        st.markdown("### Introduzione e Riferimenti")
         st.info(f"**Teorie di Riferimento**\n\n{theory_text}")
         st.success(f"**Obiettivi del Test**\n\n{objectives_text}")
         st.warning(f"**Istruzioni di Compilazione**\n\n{instructions_text}")
@@ -68,7 +68,7 @@ def render_genera_header(logo_path, test_title, theory_text, objectives_text, in
     st.markdown("---")
 
 def render_demographics():
-    st.header("👤 Informazioni Sociodemografiche")
+    st.header("Informazioni Sociodemografiche")
     with st.container():
         nickname = st.text_input("Nickname", placeholder="Il tuo nome o pseudonimo")
         col_a, col_b = st.columns(2)
@@ -88,7 +88,7 @@ def render_choice_test(questions_list):
     Renderizza domande a scelta multipla (A o B).
     Restituisce un dizionario con le scelte.
     """
-    st.subheader("📝 Questionario")
+    st.subheader("Questionario")
     st.write("Per ogni situazione, scegli l'opzione che ti descrive meglio.")
     st.markdown("---")
 
